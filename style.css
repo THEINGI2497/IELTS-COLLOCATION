@@ -1,18 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-
-html,body, h1, h2, h3, h4, h5, h6, p, span, a, input, button, th, td {
-  font-family: 'Poppins', Arial, sans-serif !important;
-  table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-  }
-  th,td{
-    border: 1px solid;
-    padding: 10px;
-    text-align: left;
-  }
+html, body, h1, h2, h3, h4, h5, h6, p, span, a, li, th, td, input, button {
+  font-family: 'Poppins', sans-serif !important;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: transparent;
+}
+
+th, td {
+  border: 1px solid #b58863 !important; /* ဇယားကွက်ဘောင်အရောင် */
+  padding: 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  background-color: rgba(181, 136, 99, 0.1);
+}
+
+
 @media screen and (max-width: 768px) {
   body {
     padding: 5px;
