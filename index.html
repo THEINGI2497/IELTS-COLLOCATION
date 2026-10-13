@@ -2,15 +2,29 @@
     <head><meta charset="UTF-8">
         <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
-  <title>IELTS VOCAL 300</title>
-    <link rel="stylesheet"
-href="style.css">
+  <title>IELTS Vocabulary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet"href="style.css">
+<div class="pagination-container">
+  <button id="prevBtn" onclick="prevPage()">Previous</button>
+  <span id="pageIndicator">Page 1</span>
+  <button id="nextBtn" onclick="nextPage()">Next</button>
+</div>
+<div class="pagination-container">
+  <button onclick="prevCollPage()">Previous</button>
+  <span id="collPageIndicator">Page 1</span>
+  <button onclick="nextCollPage()">Next</button>
+</div>
 
     </head>
     <body>
 
     <header>
-    <h1>IMPROTANT VOCABULARY</h1></header>
+    <h1>Important Vocabulary</h1></header>
     <nav>
         <ol>
             <li>IELTS VOCABULARY</li>
@@ -19,7 +33,7 @@ href="style.css">
     </nav>
     <main>
         <section>
-    <h2>IELTS VOCABULARY</h2>
+    <h2>IELTS Vocabulary</h2>
     
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search for a word, meaning, 
