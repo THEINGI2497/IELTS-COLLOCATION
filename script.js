@@ -1,14 +1,3 @@
-let myheader=document.querySelector("h1");
-myheader.innerText = "IMPORTANT VOCABULARY";
-myheader.style.color ="gray";
-document.body.style.fontFamily="Gill Sans";
-let items = document.querySelectorAll("nav ol li");
-items[0].innerText = "IELTS VOCABULARY";
-items[1].innerText="COLLOCATION";
-let myNav =document.querySelector("nav ol");
-
-
-
 const searchInput = document.getElementById("searchInput");
 let myMain = document.querySelector("main");
 document.querySelectorAll("th ,td").forEach(el => el.style.width="50%");
