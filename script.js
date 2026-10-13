@@ -2267,4 +2267,77 @@ if (clearBtn) {
     saveToLocalStorage();
   });
 }
+let currentPage = 1;
+const itemsPerPage = 10; // တစ်မျက်နှာမှာ ၁၀ လုံးပဲ ပြမယ်
 
+// ဇယားထဲမှာ ဒေတာတွေကို ဖော်ပြပေးမယ့် ပင်မ Function
+function displayTableData() {
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  
+  // vocabList ထဲကနေ ၁၀ လုံးကို slice နဲ့ ဖြတ်ယူခြင်း
+  const paginatedItems = vocabList.slice(startIndex, endIndex);
+
+  // မမရဲ့ မူလ renderTable ကို ခေါ်သုံးပြီး ဇယားထဲ ထည့်ခြင်း
+  renderTable(paginatedItems); 
+
+  // လက်ရှိ Page နံပါတ်ကို ပြသရန်
+  document.getElementById("pageIndicator").innerText = `Page ${currentPage}`;
+}
+
+// Next ခလုတ် နှိပ်ရင် နောက်တစ်မျက်နှာ သွားရန်
+function nextPage() {
+  const maxPage = Math.ceil(vocabList.length / itemsPerPage);
+  if (currentPage < maxPage) {
+    currentPage++;
+    displayTableData();
+  }
+}
+
+// Previous ခလုတ် နှိပ်ရင် ရှေ့တစ်မျက်နှာ ပြန်သွားရန်
+function prevPage() {
+  if (currentPage > 1) {
+    currentPage--;
+    displayTableData();
+  }
+}
+
+// Page စပွင့်လာတာနဲ့ ပထမဆုံး ၁၀ လုံး ပေါ်လာအောင် စလုပ်ခိုင်းခြင်း
+displayTableData();
+let currentCollPage = 1;
+const collItemsPerPage = 10; // တစ်မျက်နှာမှာ ၁၀ လုံးပဲ ပြမယ်
+
+// Collocation ဇယားဒေတာကို ၁၀ လုံးစီ ဖြတ်ယူပြီး ဖော်ပြမယ့် Function
+function displayCollocationData() {
+  const startIndex = (currentCollPage - 1) * collItemsPerPage;
+  const endIndex = startIndex + collItemsPerPage;
+  
+  // collocationList ထဲကနေ ၁၀ လုံးကို slice နဲ့ ဖြတ်ယူခြင်း
+  const paginatedItems = collocationList.slice(startIndex, endIndex);
+
+  // မမရဲ့ မူလ renderCollocationTable ကို ခေါ်သုံးပြီး ဇယားထဲ ထည့်ခြင်း
+  renderCollocationTable(paginatedItems); 
+
+  // လက်ရှိ Page နံပါတ်ကို ပြသရန် (HTML ထဲမှာ id="collPageIndicator" လို့ ပေးထားရပါမယ်)
+  document.getElementById("collPageIndicator").innerText = `Page ${currentCollPage}`;
+}
+
+// Next ခလုတ်
+function nextCollPage() {
+  const maxPage = Math.ceil(collocationList.length / collItemsPerPage);
+  if (currentCollPage < maxPage) {
+    currentCollPage++;
+    displayCollocationData();
+  }
+}
+
+// Previous ခလုတ်
+function prevCollPage() {
+  if (currentCollPage > 1) {
+    currentCollPage--;
+    displayCollocationData();
+  }
+}
+
+// Page စပွင့်လာတာနဲ့ ပထမဆုံး ၁၀ လုံး ပေါ်လာအောင် စလုပ်ခိုင်းခြင်း
+displayCollocationData();
