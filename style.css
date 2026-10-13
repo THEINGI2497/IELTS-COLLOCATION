@@ -8,7 +8,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
-  background-color: red;
+  background-color: rgb(238, 233, 233);
 }
 
 th, td {
