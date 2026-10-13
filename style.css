@@ -12,14 +12,14 @@ table {
 }
 
 th, td {
-  border: 1px; 
+  border: 1px solid; 
   padding: 12px;
   text-align: left;
   vertical-align: middle;
 }
 
 th {
-  background-color: rgba(237, 39, 13, 0.1);
+  background-color: rgba(241, 233, 232, 0.1);
 }
 
 
