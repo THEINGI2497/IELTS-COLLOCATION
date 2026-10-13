@@ -1,5 +1,17 @@
-body, h1, h2, h3, h4, h5, h6, p, span, a, input, button, th, td {
+
+
+html,body, h1, h2, h3, h4, h5, h6, p, span, a, input, button, th, td {
   font-family: 'Poppins', Arial, sans-serif !important;
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  th,td{
+    border: 1px solid;
+    padding: 10px;
+    text-align: left;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
