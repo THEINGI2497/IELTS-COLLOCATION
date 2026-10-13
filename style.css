@@ -8,18 +8,18 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
-  background-color: transparent;
+  background-color: red;
 }
 
 th, td {
-  border: 1px solid #b58863 !important; /* ဇယားကွက်ဘောင်အရောင် */
+  border: 1px; 
   padding: 12px;
   text-align: left;
   vertical-align: middle;
 }
 
 th {
-  background-color: rgba(181, 136, 99, 0.1);
+  background-color: rgba(237, 39, 13, 0.1);
 }
 
 
