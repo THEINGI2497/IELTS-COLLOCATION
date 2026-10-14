@@ -87,39 +87,6 @@ th {
   margin: left;
   font-family: cursive;
 }
-@media screen and (max-width: 768px) {
-  body {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  table {
-    width: 100% !important;
-    table-layout: fixed; 
-    margin-bottom: 20px;
-    border-collapse: collapse;
-  }
-
-  th:nth-child(1), td:nth-child(1) {
-    width: 25%;
-  }
-  th:nth-child(2), td:nth-child(2) {
-    width: 35%;
-  }
-  th:nth-child(3), td:nth-child(3) {
-    width: 20%;
-  }
-  th:nth-child(4), td:nth-child(4) {
-    width: 20%;
-  }
-
-  th, td {
-    padding: 8px 6px;
-    font-size: 13px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-}
 
 
 
