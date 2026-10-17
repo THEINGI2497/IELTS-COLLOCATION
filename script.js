@@ -1864,15 +1864,24 @@ function renderTable(dataArray) {
       <th>Meaning</th>
       <th>Collocation</th>
       <th>Daily Phrase</th>
+      <th>Bookmark</th> 
     </tr>`;
 
   dataArray.forEach(item => {
     tableHTML += `
       <tr>
-        <td>${item.word || ""}</td>
+        <td>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span>${item.word || ""}</span>
+            <button onclick="speakText('${(item.word || "").replace(/'/g, "\\'")}')" style="background: none; border: none; cursor: pointer;">🔊</button>
+          </div>
+        </td>
         <td>${item.meaning || ""}</td>
         <td>${item.collocation || ""}</td>
         <td>${item.dailyPhrase || ""}</td>
+        <td>
+        <button class="bookmark-btn" onclick="toggleBookmark('${item.word || ""}')"></button>
+        </td>
       </tr>
     `;
   });
@@ -2199,9 +2208,15 @@ let tableHTML = `
 dataArray.forEach(item => {
 tableHTML += `
   <tr>
-    <td>${item.collocation || ""}</td>
-    <td>${item.meaning || ""}</td>
-  </tr>
+  <td>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span>${item.collocation || ""}</span>
+          <button onclick="speakText('${(item.collocation || "").replace(/'/g, "\\'")}')" style="background: none; border: none; cursor: pointer;">🔊</button>
+        </div>
+      </td>
+      <td>${item.meaning || ""}</td>
+    </tr>
+
 `;
 });
 
@@ -2234,7 +2249,6 @@ searchInput.addEventListener("input", function () {
   });
 
   renderTable(filteredList);
-
   if (typeof collocationList !== "undefined") {
     const filteredCollocations = collocationList.filter(item => {
       return (
@@ -2268,24 +2282,19 @@ if (clearBtn) {
   });
 }
 let currentPage = 1;
-const itemsPerPage = 10; // တစ်မျက်နှာမှာ ၁၀ လုံးပဲ ပြမယ်
+const itemsPerPage = 10; 
 
-// ဇယားထဲမှာ ဒေတာတွေကို ဖော်ပြပေးမယ့် ပင်မ Function
 function displayTableData() {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   
-  // vocabList ထဲကနေ ၁၀ လုံးကို slice နဲ့ ဖြတ်ယူခြင်း
   const paginatedItems = vocabList.slice(startIndex, endIndex);
 
-  // မမရဲ့ မူလ renderTable ကို ခေါ်သုံးပြီး ဇယားထဲ ထည့်ခြင်း
   renderTable(paginatedItems); 
 
-  // လက်ရှိ Page နံပါတ်ကို ပြသရန်
   document.getElementById("pageIndicator").innerText = `Page ${currentPage}`;
 }
 
-// Next ခလုတ် နှိပ်ရင် နောက်တစ်မျက်နှာ သွားရန်
 function nextPage() {
   const maxPage = Math.ceil(vocabList.length / itemsPerPage);
   if (currentPage < maxPage) {
@@ -2294,7 +2303,6 @@ function nextPage() {
   }
 }
 
-// Previous ခလုတ် နှိပ်ရင် ရှေ့တစ်မျက်နှာ ပြန်သွားရန်
 function prevPage() {
   if (currentPage > 1) {
     currentPage--;
@@ -2302,27 +2310,21 @@ function prevPage() {
   }
 }
 
-// Page စပွင့်လာတာနဲ့ ပထမဆုံး ၁၀ လုံး ပေါ်လာအောင် စလုပ်ခိုင်းခြင်း
 displayTableData();
 let currentCollPage = 1;
-const collItemsPerPage = 10; // တစ်မျက်နှာမှာ ၁၀ လုံးပဲ ပြမယ်
+const collItemsPerPage = 10; 
 
-// Collocation ဇယားဒေတာကို ၁၀ လုံးစီ ဖြတ်ယူပြီး ဖော်ပြမယ့် Function
 function displayCollocationData() {
   const startIndex = (currentCollPage - 1) * collItemsPerPage;
   const endIndex = startIndex + collItemsPerPage;
   
-  // collocationList ထဲကနေ ၁၀ လုံးကို slice နဲ့ ဖြတ်ယူခြင်း
   const paginatedItems = collocationList.slice(startIndex, endIndex);
 
-  // မမရဲ့ မူလ renderCollocationTable ကို ခေါ်သုံးပြီး ဇယားထဲ ထည့်ခြင်း
   renderCollocationTable(paginatedItems); 
 
-  // လက်ရှိ Page နံပါတ်ကို ပြသရန် (HTML ထဲမှာ id="collPageIndicator" လို့ ပေးထားရပါမယ်)
   document.getElementById("collPageIndicator").innerText = `Page ${currentCollPage}`;
 }
 
-// Next ခလုတ်
 function nextCollPage() {
   const maxPage = Math.ceil(collocationList.length / collItemsPerPage);
   if (currentCollPage < maxPage) {
@@ -2331,7 +2333,6 @@ function nextCollPage() {
   }
 }
 
-// Previous ခလုတ်
 function prevCollPage() {
   if (currentCollPage > 1) {
     currentCollPage--;
@@ -2339,5 +2340,17 @@ function prevCollPage() {
   }
 }
 
-// Page စပွင့်လာတာနဲ့ ပထမဆုံး ၁၀ လုံး ပေါ်လာအောင် စလုပ်ခိုင်းခြင်း
 displayCollocationData();
+
+
+function speakText(text) {
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9;
+    
+    window.currentUtterance = utterance;
+  }
+}
