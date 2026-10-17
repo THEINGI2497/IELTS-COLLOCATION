@@ -88,4 +88,31 @@ th {
   font-family: cursive;
 }
 
+.collocation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.bookmark-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bookmark-btn:hover {
+  transform: scale(1.15);
+}
+
+/* Bookmark လုပ်ထားစဉ် အနေအထား (Active) */
+.bookmark-btn.active {
+  color: #f39c12;
+}
 
