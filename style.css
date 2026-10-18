@@ -99,20 +99,41 @@ th {
   border-radius: 8px;
 }
 
-.bookmark-btn {
-  background: transparent;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+
+let currentQuizIndex = 0;
+let quizList = [];
+
+function startQuizMode() {
+  quizList = [...vocabList]; 
+  
+  if (quizList.length === 0) {
+    alert;
+    return;
+  }
+
+  currentQuizIndex = 0;
+  document.getElementById("quizContainer").style.display = "block";
+  displayCurrentQuiz();
 }
 
-.bookmark-btn:hover {
-  transform: scale(1.15);
+function displayCurrentQuiz() {
+  const currentItem = quizList[currentQuizIndex];
+  document.getElementById("quizWord").innerText = `Word: ${currentItem.word || currentItem.collocation}`;
+  document.getElementById("quizMeaning").innerText = ""; 
+
+function showAnswer() {
+  const currentItem = quizList[currentQuizIndex];
+  document.getElementById("quizMeaning").innerText = `Meaning: ${currentItem.meaning}`;
 }
 
-/* Bookmark လုပ်ထားစဉ် အနေအထား (Active) */
-.bookmark-btn.active {
-  color: #f39c12;
+function nextQuizQuestion() {
+  currentQuizIndex++;
+  if (currentQuizIndex >= quizList.length) {
+    currentQuizIndex = 0; 
+  }
+  displayCurrentQuiz();
 }
 
+function closeQuizMode() {
+  document.getElementById("quizContainer").style.display = "none";
+}
