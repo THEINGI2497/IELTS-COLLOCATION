@@ -3,6 +3,33 @@ let myMain = document.querySelector("main");
 document.querySelectorAll("th ,td").forEach(el => el.style.width="50%");
 document.querySelectorAll("table").forEach(el => el.style.width="100%");
 
+
+let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+
+function toggleBookmark(word) {
+  const index = bookmarks.indexOf(word);
+  if (index > -1) {
+    bookmarks.splice(index, 1);
+  } else {
+    bookmarks.push(word);
+  }
+  
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  
+  displayTableData();
+  displayCollocationData();
+}
+
+function getBookmarkButton(word) {
+  const isBookmarked = bookmarks.includes(word);
+  const starIcon = isBookmarked ? "★" : "☆"; // ★  ☆ 
+  
+  return `<button onclick="toggleBookmark('${word}')" style="background:none; border:none; cursor:pointer; font-size:18px;">${starIcon}</button>`;
+}
+
+
+let currentPage=1;
+let itemsPerPage=10;
 let vocabList = [
   { word: "Acknowledge", meaning: "လက်ခံအသိအမှတ်ပြုသည်" ,
     collocation: "Acknowledge the importance of education",
@@ -1864,7 +1891,7 @@ function renderTable(dataArray) {
       <th>Meaning</th>
       <th>Collocation</th>
       <th>Daily Phrase</th>
-      <th>Bookmark</th> 
+      <th>Bookmark</th>
     </tr>`;
 
   dataArray.forEach(item => {
@@ -1873,24 +1900,26 @@ function renderTable(dataArray) {
         <td>
           <div style="display: flex; justify-content: space-between; align-items: center;">
             <span>${item.word || ""}</span>
-            <button onclick="speakText('${(item.word || "").replace(/'/g, "\\'")}')" style="background: none; border: none; cursor: pointer;">🔊</button>
+            <button onclick="speakText('${(item.word || "").replace(/'/g, "\\'")}')">🔊</button>
           </div>
         </td>
         <td>${item.meaning || ""}</td>
         <td>${item.collocation || ""}</td>
         <td>${item.dailyPhrase || ""}</td>
-        <td>
-        <button class="bookmark-btn" onclick="toggleBookmark('${item.word || ""}')"></button>
-        </td>
+<td>${getBookmarkButton(item.word)}</td>
       </tr>
     `;
   });
 
-  let myTable = document.querySelector("table");
+
+let myTable = document.querySelector("table");
   if (myTable) {
     myTable.innerHTML = tableHTML;
   }
 }
+
+let colloCurrentPage=1;
+let colloItemsPerPage = 10;
 let collocationList =[
   { collocation: "Do homework", meaning: "အိမ်စာလုပ်သည်" },
 {collocation:"Do research", meaning:"ရှာဖွေသည်" },
@@ -2203,21 +2232,22 @@ let tableHTML = `
   <tr>
     <th>Collocation</th>
     <th>Meaning</th>
+    <th>Bookmark</th>
   </tr>`;
   
 dataArray.forEach(item => {
-tableHTML += `
-  <tr>
-  <td>
+  tableHTML += `
+    <tr>
+      <td>
         <div style="display: flex; justify-content: space-between; align-items: center;">
           <span>${item.collocation || ""}</span>
-          <button onclick="speakText('${(item.collocation || "").replace(/'/g, "\\'")}')" style="background: none; border: none; cursor: pointer;">🔊</button>
+          <button onclick="speakText('${(item.collocation || "").replace(/'/g, "\\'")}')">🔊</button>
         </div>
       </td>
       <td>${item.meaning || ""}</td>
+      <td>${getBookmarkButton(item.collocation)}</td>
     </tr>
-
-`;
+  `;
 });
 
 const vocabCount = document.getElementById("vocabCount");
@@ -2280,66 +2310,57 @@ if (clearBtn) {
     }
     saveToLocalStorage();
   });
+
 }
-let currentPage = 1;
-const itemsPerPage = 10; 
+let vocabPage = 1;
+let collPage = 1;
+const perPage = 10;
 
 function displayTableData() {
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  
-  const paginatedItems = vocabList.slice(startIndex, endIndex);
-
-  renderTable(paginatedItems); 
-
-  document.getElementById("pageIndicator").innerText = `Page ${currentPage}`;
+  const start = (vocabPage - 1) * perPage;
+  const end = start + perPage;
+  const items = vocabList.slice(start, end);
+  renderTable(items);
+  document.getElementById("pageIndicator").innerText = `Page ${vocabPage}`;
 }
 
 function nextPage() {
-  const maxPage = Math.ceil(vocabList.length / itemsPerPage);
-  if (currentPage < maxPage) {
-    currentPage++;
+  if (vocabPage * perPage < vocabList.length) {
+    vocabPage++;
     displayTableData();
   }
 }
 
 function prevPage() {
-  if (currentPage > 1) {
-    currentPage--;
+  if (vocabPage > 1) {
+    vocabPage--;
     displayTableData();
   }
 }
 
-displayTableData();
-let currentCollPage = 1;
-const collItemsPerPage = 10; 
-
 function displayCollocationData() {
-  const startIndex = (currentCollPage - 1) * collItemsPerPage;
-  const endIndex = startIndex + collItemsPerPage;
-  
-  const paginatedItems = collocationList.slice(startIndex, endIndex);
-
-  renderCollocationTable(paginatedItems); 
-
-  document.getElementById("collPageIndicator").innerText = `Page ${currentCollPage}`;
+  const start = (collPage - 1) * perPage;
+  const end = start + perPage;
+  const items = collocationList.slice(start, end);
+  renderCollocationTable(items);
+  document.getElementById("collPageIndicator").innerText = `Page ${collPage}`;
 }
 
 function nextCollPage() {
-  const maxPage = Math.ceil(collocationList.length / collItemsPerPage);
-  if (currentCollPage < maxPage) {
-    currentCollPage++;
+  if (collPage * perPage < collocationList.length) {
+    collPage++;
     displayCollocationData();
   }
 }
 
 function prevCollPage() {
-  if (currentCollPage > 1) {
-    currentCollPage--;
+  if (collPage > 1) {
+    collPage--;
     displayCollocationData();
   }
 }
 
+displayTableData();
 displayCollocationData();
 
 
@@ -2352,5 +2373,48 @@ function speakText(text) {
     utterance.rate = 0.9;
     
     window.currentUtterance = utterance;
+    window.speechSynthesis.speak(utterance);
   }
 }
+
+let currentQuizIndex = 0;
+let quizList = [];
+
+function startQuizMode() {
+  quizList = [...vocabList]; 
+  
+  if (quizList.length === 0) {
+    alert;
+    return;
+  }
+
+  currentQuizIndex = 0;
+  document.getElementById("quizContainer").style.display = "block";
+  displayCurrentQuiz();
+}
+
+function displayCurrentQuiz() {
+  const currentItem = quizList[currentQuizIndex];
+  document.getElementById("quizWord").innerText = `Word: ${currentItem.word || currentItem.collocation}`;
+  document.getElementById("quizMeaning").innerText = ""; // အဖြေကို အရင်ဝှက်ထားမည်
+}
+
+function showAnswer() {
+  const currentItem = quizList[currentQuizIndex];
+  document.getElementById("quizMeaning").innerText = `Meaning: ${currentItem.meaning}`;
+}
+
+function nextQuizQuestion() {
+  currentQuizIndex++;
+  if (currentQuizIndex >= quizList.length) {
+    currentQuizIndex = 0;
+  }
+  displayCurrentQuiz();
+}
+
+function closeQuizMode() {
+  document.getElementById("quizContainer").style.display = "none";
+}
+
+
+
