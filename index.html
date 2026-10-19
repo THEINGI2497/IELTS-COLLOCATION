@@ -3,11 +3,11 @@
         <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
   <title>IELTS Vocabulary</title>
+  <link rel ="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <body>
+ <body>
 
   <div class="pagination-container">
     <button onclick="prevPage()">Previous</button>
@@ -20,15 +20,62 @@ content="width=device-width, initial-scale=1.0">
     <span id="collPageIndicator">Page 1</span>
     <button onclick="nextCollPage()">Next</button>
   </div>
+<div class="category-filter-container">
+  <button class="filter-btn active" onclick="switchCategory('all')">🌐 View All</button>
+  <button class="filter-btn" onclick="switchCategory('vocab')">📚 IELTS Vocabulary</button>
+  <button class="filter-btn" onclick="switchCategory('coll')">💡 Collocation</button>
+</div>
 
-</body>
 
-  <link rel="stylesheet" href="style.css">
+<div class="stats-dashboard">
+  <div class="stat-card">
+    <h3>📚 Total Vocab</h3>
+    <p id="totalVocabCount">0</p>
+  </div>
+  <div class="stat-card">
+    <h3>💡 Total Collocations</h3>
+    <p id="totalCollCount">0</p>
+  </div>
+  <div class="stat-card">
+    <h3>⭐ Bookmarked Items</h3>
+    <p id="totalBookmarkCount">0</p>
+  </div>
+</div>
+
+<div class="backup-container" style="margin: 15px 0; display: flex; gap: 10px;">
+  <button onclick="exportData()" class="btn-action">📤 Export Data (Backup)</button>
+  
+  <label for="importFile" class="btn-action" style="cursor: pointer; display: inline-block; background-color: #4f46e5; color: white; padding: 8px 16px; border-radius: 6px;">
+    📥 Import Data (Restore)
+  </label>
+  <input type="file" id="importFile" accept=".json" onchange="importData(event)" style="display: none;">
+</div>
+<button onclick="toggleDarkMode()" class="dark-mode-btn" id="darkModeBtn">🌙 Dark Mode</button>
+
+<!-- Loading State Indicator -->
+<div id="loadingState" style="text-align: center; padding: 20px; display: none;">
+  <p style="font-size: 16px; color: #4f46e5;">⏳ နေစရာ ဒေတာများကို ရယူနေပါပြီ...</p>
+</div>
+
+<div id="emptyState" style="text-align: center; padding: 30px; display: none;">
+  <p style="font-size: 16px; color: #64748b;">📭 ရှာဖွေတွေ့ရှိမှု မရှိပါ (သို့မဟုတ်) ဒေတာ မရှိသေးပါ။</p>
+</div>
+
+
+<div id="streakBadge" style="background: #fffbeb; border: 1px solid #fef3c7; padding: 8px 15px; border-radius: 8px; display: inline-flex; align-items: center; gap: 8px; font-weight: bold; color: #d97706;">
+  🔥 Daily Streak: <span id="streakCount">0</span> Days
+</div>
+
+<button onclick="openSecondWindow()" style="padding: 8px 15px; background: #059669; color: white; border: none; border-radius: 5px; cursor: pointer;">
+  🪟 Open Multi-Screen View
+</button>
+
+
     </head>
-    <body>
 
     <header>
     <h1>Important Vocabulary</h1></header>
+    <table>
     <nav>
         <ol>
             <li>IELTS VOCABULARY</li>
@@ -58,7 +105,6 @@ content="width=device-width, initial-scale=1.0">
 <th>Daily Phrase</th>
 <th>Daily Meaning</th>
 <tr>
-</table>  
 </table>
 <button onclick="startQuizMode()" style="margin: 10px 0; padding: 10px 15px; cursor: pointer;">Quiz / Flashcard Mode စတင်ရန်</button>
 
