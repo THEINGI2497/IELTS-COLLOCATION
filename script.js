@@ -2221,8 +2221,77 @@ let collocationList =[
   { collocation: "Grow up", meaning: "ကြီးပြင်းလာသည်" },
   { collocation: "Look up to", meaning: "လေးစားအားကျသည်" },
   { collocation: "Pass down", meaning: "မျိုးဆက်တစ်ခုမှတစ်ခုသို့ လက်ဆင့်ကမ်းသည်" },
-  { collocation: "Stand out", meaning: "ပေါ်လွင်ထင်ရှားသည်" }
-
+  { collocation: "Stand out", meaning: "ပေါ်လွင်ထင်ရှားသည်" },
+{collocation:"Break a habit",meaning:"အ ေလ့ထ ဆိုးကိုဖျက်သည်"},
+{collocation:"file a complaint",meaning:"တရားဝင်တိုင်ကြားစာရသည်"},
+{collocation:"deliver a speech",meaning:"မိန့်ခွန်းေပြာသည်"},
+{ collocation: "Account for", meaning: "အကြောင်းပြချက်ပေးသည် / ရှင်းပြသည်" },
+  { collocation: "Act on", meaning: "အကြံပြုချက်အတိုင်း ဆောင်ရွက်သည်" },
+  { collocation: "Add on", meaning: "ထပ်ပေါင်းထည့်သည်" },
+  { collocation: "Back up", meaning: "ထောက်ခံအားပေးသည် / အရန်ကူးသည်" },
+  { collocation: "Bail on", meaning: "ကတိပျက်ပြီး ပစ်ထားခဲ့သည်" },
+  { collocation: "Bang on about", meaning: "ငြီးငွေ့စရာကောင်းအောင် တတွတ်တွတ်ပြောနေသည်" },
+  { collocation: "Be in on", meaning: "ပါဝင်ပတ်သက်သည်" },
+  { collocation: "Bear down on", meaning: "ပြင်းပြင်းထန်ထန် ဖိအားပေးသည်" },
+  { collocation: "Black out", meaning: "သတိလစ်သွားသည်" },
+  { collocation: "Blow off", meaning: "လျစ်လျူရှုသည် / ပယ်ဖျက်သည်" },
+  { collocation: "Blow up", meaning: "ဒေါသပေါက်ကွဲသည် / ပေါက်ကွဲသည်" },
+  { collocation: "Bone up on", meaning: "အသည်းအသန်လေ့လာသည်" },
+  { collocation: "Break into", meaning: "အတင်းအဓမ္မ ကျူးကျော်ဝင်ရောက်သည်" },
+  { collocation: "Brush up on", meaning: "ပြန်လည်လေ့ကျင့်မွမ်းမံသည်" },
+  { collocation: "Build up", meaning: "တဖြည်းဖြည်း တိုးပွားလာစေသည်" },
+  { collocation: "Burn out", meaning: "ပင်ပန်းနွမ်းနယ်ပြီး အလုပ်မလုပ်နိုင်တော့ပါ" },
+  { collocation: "Call back", meaning: "ဖုန်းပြန်ခေါ်သည်" },
+  { collocation: "Carry out", meaning: "ပြီးမြောက်အောင် ဆောင်ရွက်သည်" },
+  { collocation: "Catch up with", meaning: "အမီလိုက်သည် / တူညီသောအဆင့်သို့ရောက်သည်" },
+  { collocation: "Check in with", meaning: "အကြောင်းကြားသည် / အတည်ပြုချက်ယူသည်" },
+  { collocation: "Cheer up", meaning: "စိတ်ရွှင်လန်းလာသည်" },
+  { collocation: "Clear up", meaning: "ရှင်းလင်းအောင်လုပ်သည် / ဖြေရှင်းသည်" },
+  { collocation: "Come about", meaning: "ဖြစ်ပျက်လာသည်" },
+  { collocation: "Stick around", meaning: "အနီးအနားမှာ ဆက်ရှိနေသည်" },
+  { collocation: "Stick with", meaning: "ဆက်လက်လုပ်ဆောင်သည် / သစ္စာရှိသည်" },
+  { collocation: "Take apart", meaning: "အစိတ်အပိုင်းများ ဖြုတ်သည်" },
+  { collocation: "Take care of", meaning: "ဂရုစိုက်သည် / စောင့်ရှောက်သည် / တာဝန်ယူသည်" },
+  { collocation: "Take off", meaning: "ချွတ်သည် / အောင်မြင်လာသည်" },
+  { collocation: "Take on", meaning: "တာဝန်ယူသည် / အလုပ်ခန့်သည်" },
+  { collocation: "Take out", meaning: "ဖယ်ရှားသည် / ဖယ်ထုတ်သည် / အပြင်သို့ ဖိတ်ခေါ်သည်" },
+  { collocation: "Talk over", meaning: "ဆွေးနွေးသည်" },
+  { collocation: "Tear down", meaning: "ဖြိုဖျက်ဆီးသည်" },
+  { collocation: "Tear up", meaning: "ဆုတ်ဖြဲပစ်သည်" },
+  { collocation: "Tell off", meaning: "ဆူပူကြိမ်းမောင်းသည်" },
+  { collocation: "Think over", meaning: "ပြန်လည်စဉ်းစားသည် / သေချာစဉ်းစားသည်" },
+  { collocation: "Throw away", meaning: "လွှင့်ပစ်သည်" },
+  { collocation: "Throw back", meaning: "အတိတ်ကို ပြန်သတိရစေသည်" },
+  { collocation: "Throw in", meaning: "အလကားထည့်ပေးသည်" },
+  { collocation: "Throw out", meaning: "လွှင့်ပစ်သည် / နှင်ထုတ်သည်" },
+  { collocation: "Try on", meaning: "ဝတ်ကြည့်သည်" },
+  { collocation: "Try out", meaning: "စမ်းသပ်ကြည့်သည်" },
+  { collocation: "Turn around", meaning: "လှည့်ပြန်သည် / လမ်းကြောင်းပြောင်းသည်" },
+  { collocation: "Turn down", meaning: "ငြင်းပယ်သည်" },
+  { collocation: "Turn off", meaning: "စိတ်ကုန်စေသည် / ပိတ်သည်" },
+  { collocation: "Turn in", meaning: "တင်ပြသည် / အိပ်ရာဝင်သည်" },
+  { collocation: "Turn on", meaning: "ဖွင့်သည် / စိတ်လှုပ်ရှားစေသည်" },
+  { collocation: "Turn out", meaning: "ရလဒ်ထွက်ပေါ်သည် / တက်ရောက်သည်" },
+  { collocation: "Turn up", meaning: "ပေါ်လာသည် / အသံချဲ့သည်" },
+  { collocation: "Use up", meaning: "အကုန်အစင်သုံးသည်" },
+  { collocation: "Wake up", meaning: "နိုးသည်" },
+  { collocation: "Watch out", meaning: "သတိပြုပါ" },
+  { collocation: "Wear out", meaning: "နွမ်းလျသွားသည် / ဟောင်းနွမ်းသွားသည်" },
+  { collocation: "Work out", meaning: "လေ့ကျင့်ခန်းလုပ်သည် / အဖြေရှာသည်" },
+  { collocation: "Write down", meaning: "ချရေးမှတ်သားသည်" },
+  { collocation: "Zip up", meaning: "ဇိပ့်ဆွဲပိတ်သည်" },
+  { collocation: "Zone out", meaning: "အာရုံလွတ်သွားသည်" },
+  { collocation: "Look into", meaning: "စုံစမ်းစစ်ဆေးသည်" },
+  { collocation: "Ended up", meaning: "နောက်ဆုံးမှာ... ဖြစ်သွားခဲ့သည်" },
+  { collocation: "Turn out to be", meaning: "ထင်မှတ်မထားဘဲ... ဖြစ်လာသည်" },
+  { collocation: "Pass down", meaning: "မျိုးဆက်တစ်ခုမှတစ်ခုသို့ လက်ဆင့်ကမ်းသည်" },
+  { collocation: "Take up", meaning: "ဝါသနာပါလို့ စတင်လုပ်ကိုင်သည် သို့မဟုတ် အချိန်ယူသည်" },
+  { collocation: "Grow up", meaning: "ကြီးပြင်းလာသည်" },
+  { collocation: "Look up to", meaning: "လေးစားအားကျသည်" },
+  { collocation: "Stand out", meaning: "ပေါ်လွင်ထင်ရှားသည်" },
+  { collocation: "Cope with", meaning: "ရင်ဆိုင်ဖြေရှင်းသည်" },
+  {collocation:"Deal with",meaning:"ကိုင်တွယ် ေဖြရှင်းသည်"}
+  
 ]
 
 function renderCollocationTable(dataArray) {
@@ -2416,5 +2485,244 @@ function closeQuizMode() {
   document.getElementById("quizContainer").style.display = "none";
 }
 
+
+
+
+function switchCategory(category) {
+  const buttons = document.querySelectorAll('.filter-btn');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+
+  const vocabSection = document.getElementById('vocabSection'); // မမရဲ့ Vocab Table Container ID ထည့်ပါ
+  const collSection = document.getElementById('collSection');   // မမရဲ့ Collocation Table Container ID ထည့်ပါ
+
+  if (category === 'all') {
+    if (vocabSection) vocabSection.style.display = 'block';
+    if (collSection) collSection.style.display = 'block';
+  } else if (category === 'vocab') {
+    if (vocabSection) vocabSection.style.display = 'block';
+    if (collSection) collSection.style.display = 'none';
+  } else if (category === 'coll') {
+    if (vocabSection) vocabSection.style.display = 'none';
+    if (collSection) collSection.style.display = 'block';
+  }
+}
+
+
+function updateLearningStats() {
+  const totalVocab = typeof vocabList !== 'undefined' ? vocabList.length : 0;
+  document.getElementById("totalVocabCount").innerText = totalVocab;
+
+  const totalColl = typeof collocationList !== 'undefined' ? collocationList.length : 0;
+  document.getElementById("totalCollCount").innerText = totalColl;
+
+  let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+  document.getElementById("totalBookmarkCount").innerText = bookmarks.length;
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  updateLearningStats();
+});
+function updateLearningStats() {
+  const totalVocab = typeof vocabList !== 'undefined' ? vocabList.length : 0;
+  document.getElementById("totalVocabCount").innerText = totalVocab;
+
+  const totalColl = typeof collocationList !== 'undefined' ? collocationList.length : 0;
+  document.getElementById("totalCollCount").innerText = totalColl;
+
+  let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+  document.getElementById("totalBookmarkCount").innerText = bookmarks.length;
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  updateLearningStats();
+});
+
+function exportData() {
+  const data = {
+    vocabList: typeof vocabList !== 'undefined' ? vocabList : [],
+    collocationList: typeof collocationList !== 'undefined' ? collocationList : [],
+    bookmarks: JSON.parse(localStorage.getItem('bookmarks')) || []
+  };
+  
+  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data, null, 2));
+  const downloadAnchor = document.createElement('a');
+  downloadAnchor.setAttribute("href", dataStr);
+  downloadAnchor.setAttribute("download", "vocabulary_backup.json");
+  document.body.appendChild(downloadAnchor);
+  downloadAnchor.click();
+  downloadAnchor.remove();
+}
+function importData(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      const importedData = JSON.parse(e.target.result);
+      
+      if (importedData.bookmarks) {
+        localStorage.setItem('bookmarks', JSON.stringify(importedData.bookmarks));
+      }
+      
+      alert;
+      location.reload();
+    } catch (error) {
+      alert;
+    }
+  };
+  reader.readAsText(file);
+}
+
+// Dark Mode Toggle Function
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+  
+  const isDarkMode = document.body.classList.contains('dark-mode');
+  localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+  
+  const btn = document.getElementById('darkModeBtn');
+  btn.innerText = isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode';
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    const btn = document.getElementById('darkModeBtn');
+    if (btn) btn.innerText = '☀️ Light Mode';
+  }
+});
+
+// Loading State ပြရန် / ဖျောက်ရန်
+function setLoading(isLoading) {
+  const loader = document.getElementById("loadingState");
+  if (loader) {
+    loader.style.display = isLoading ? "block" : "none";
+  }
+}
+
+function checkEmptyState(listLength) {
+  const emptyEl = document.getElementById("emptyState");
+  if (emptyEl) {
+    emptyEl.style.display = listLength === 0 ? "block" : "none";
+  }
+}
+document.addEventListener('keydown', function(e) {
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+    e.preventDefault(); 
+    
+    const searchInput = document.querySelector('.search-input') || document.querySelector('input[type="text"]');
+    
+    if (searchInput) {
+      searchInput.focus();
+      searchInput.select(); 
+    }
+  }
+});
+
+function checkDailyStreak() {
+  const lastLoginDate = localStorage.getItem("lastLoginDate");
+  let currentStreak = parseInt(localStorage.getItem("dailyStreak")) || 0;
+  
+  // ယနေ့ရက်စွဲကို ယူမည် (အချိန်မပါဘဲ ရက်စွဲသက်သက်)
+  const today = new Date().toDateString();
+
+  if (lastLoginDate === today) {
+    // ဒီနေ့ ဝင်ပြီးသားဖြစ်လျှင် အရေအတွက် မပြောင်းပါ
+  } else {
+    // မနေ့က ရက်စွဲကို တွက်မည်
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+
+    if (lastLoginDate === yesterday.toDateString()) {
+      currentStreak += 1;
+    } else {
+      currentStreak = 1;
+    }
+
+    localStorage.setItem("dailyStreak", currentStreak);
+    localStorage.setItem("lastLoginDate", today);
+  }
+
+  const streakElement = document.getElementById("streakCount");
+  if (streakElement) {
+    streakElement.textContent = currentStreak;
+  }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  checkDailyStreak();
+});
+
+function openSecondWindow() {
+  // vocabList variable ထဲက ဒေတာတွေကို တိုက်ရိုက် ယူသုံးပါမည်
+  const data = (typeof vocabList !== 'undefined') ? vocabList : [];
+
+  const dualWindow = window.open(
+    '', 
+    'VocabularyQuizWindow', 
+    'width=700,height=800,left=100,top=100'
+  );
+
+  let tableRows = '';
+  if (data.length === 0) {
+    tableRows = `<tr><td colspan="3" style="text-align:center; padding: 15px;">No vocabulary found!</td></tr>`;
+  } else {
+    data.forEach((item) => {
+      tableRows += `
+        <tr style="border-bottom: 1px solid #e5e7eb;">
+          <td style="padding: 10px; font-weight: bold; color: #4f46e5;">${item.word || item.Word || ''}</td>
+          <td style="padding: 10px;">${item.meaning || item.Meaning || ''}</td>
+          <td style="padding: 10px; color: #059669;">${item.collocation || item.Collocation || ''}</td>
+        </tr>
+      `;
+    });
+  }
+
+  dualWindow.document.write(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Multi-Screen Vocabulary Study View</title>
+      <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; background: #f8fafc; color: #334155; }
+        .container { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        h2 { color: #1e293b; margin-top: 0; display: flex; justify-content: space-between; align-items: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th { background: #f1f5f9; text-align: left; padding: 10px; border-bottom: 2px solid #cbd5e1; }
+        .close-btn { padding: 6px 12px; background: #ef4444; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .close-btn:hover { background: #dc2626; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h2>
+          <span>📚 Multi-Screen Study View</span>
+          <button class="close-btn" onclick="window.close()">Close</button>
+        </h2>
+        <p style="color: #64748b;">ဒုတိယ Screen ပေါ်တွင် Vocabulary စာရင်းကို သီးသန့် ကြည့်ရှုလေ့လာနိုင်ပါသည်။</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Meaning</th>
+              <th>Collocation</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${tableRows}
+          </tbody>
+        </table>
+      </div>
+    </body>
+    </html>
+  `);
+  
+  dualWindow.document.close();
+}
+
+const vocabData=JSON.parse(localStorage.getItem('vocabList'))||[];
 
 
