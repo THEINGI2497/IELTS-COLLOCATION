@@ -126,7 +126,6 @@ th {
   box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
 }
 
-/* Progress Tracker Dashboard Styling */
 .stats-dashboard {
   display: flex;
   gap: 20px;
@@ -242,7 +241,6 @@ body {
   border: 1px dashed var(--border-color, #cbd5e1);
   border-radius: 8px;
   margin: 15px 0;
-}/* Card လေးတွေအပေါ် Mouse တင်လိုက်ရင် အပေါ်နည်းနည်းကြွတက်ပြီး အရိပ်ပါလာစေရန် */
 .stat-card {
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease !important;
 }
@@ -269,7 +267,6 @@ table tbody tr:hover {
   background-color: rgba(7, 139, 53, 0.05);
 }
 
-/* ကီးဘုတ်ဖြင့် Tab နှိပ်၍သွားလာစဉ် (Focus) သေချာပေါ်စေရန် */
 button:focus-visible, 
 input:focus-visible, 
 select:focus-visible {
@@ -277,7 +274,6 @@ select:focus-visible {
   outline-offset: 2px !important;
 }
 
-/* Screen reader သုံးသူများအတွက်သာ ဖတ်ရန် (Visual တွင် ဖျောက်ထားရန်) */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -291,3 +287,12 @@ select:focus-visible {
 }
 
 
+body.dark-mode table,
+body.dark-mode th,
+body.dark-mode td {
+    background-color: #1e293b !important;
+    color: #f1f5f9 !important;
+    border-color: #475569 !important;
+}
+
+}
