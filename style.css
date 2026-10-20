@@ -286,13 +286,13 @@ select:focus-visible {
   border: 0;
 }
 
+}
 
+/* Fix table text visibility in Dark Mode */
 body.dark-mode table,
 body.dark-mode th,
 body.dark-mode td {
     background-color: #1e293b !important;
     color: #f1f5f9 !important;
     border-color: #475569 !important;
-}
-
 }
