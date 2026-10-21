@@ -1879,7 +1879,74 @@ dailyPhrase: "Make sure to compare prices before making a purchase."
     meaning: "စွဲမြဲစွာလုပ်ဆောင်သည်/လိုက်နာသည်",
     collocation: "Stick to a routine",
     dailyPhrase: "It's effective to stick to a daily study schedule."
-  }
+  },
+  
+
+
+  { word: "Expert", 
+    meaning: "အထူးကျွမ်းကျင်သော ဗဟုသုတ သို့မဟုတ် စွမ်းရည်ရှိသူ", 
+    collocation: "leading expert; industry expert; expert advice; expert knowledge; become an expert", 
+    dailyPhrase: "She's an expert in her field. / You should ask an expert for advice. / He has expert knowledge of the subject." },
+  { word: "Exploit", 
+    meaning: "တစ်စုံတစ်ရာကို အသုံးပြုသည် (သို့) အခွင့်ကောင်းယူသည်", 
+    collocation: "exploit resources; exploit an opportunity; exploit a weakness; exploit natural resources; exploit workers",
+     dailyPhrase: "We should exploit this opportunity. / Some companies exploit their workers. / The country needs to use its resources wisely." },
+  { word: "Export", 
+    meaning: "ကုန်ပစ္စည်းများကို အခြားနိုင်ငံများသို့ တင်ပို့သည်", 
+    collocation: "export goods; export products; export data; export market; export business",
+     dailyPhrase: "The company exports goods to Japan. / You can export the data as a file. / The country exports agricultural products." },
+  { word: "Expose", 
+    meaning: "ဖော်ထုတ်သည် (သို့) အလင်းပြပေါ်ထွက်စေသည်",
+     collocation: "expose the truth; expose a problem; expose someone to risk; expose to sunlight; expose corruption", 
+     dailyPhrase: "The report exposed the truth. / Don't expose your skin to too much sunlight. / The investigation exposed serious problems." },
+  { word: "Extend", 
+    meaning: "ပိုမိုရှည်လျားလာအောင် (သို့) ကျယ်ဝန်းလာအောင် ပြုလုပ်သည်",
+     collocation: "extend a deadline; extend an invitation; extend a contract; extend a period; extend support",
+      dailyPhrase: "Could you extend the deadline? / They decided to extend the contract. / I'd like to extend my thanks to everyone." },
+  { word: "External", 
+    meaning: "အပြင်ဘက်ပိုင်းဆိုင်ရာ", 
+    collocation: "external factors; external environment; external pressure; external support; external hard drive", 
+    dailyPhrase: "External factors can affect the results. / We need external support. / I saved the files on an external hard drive." },
+  { word: "Extract",
+     meaning: "ဖယ်ရှားထုတ်ယူသည်", collocation: "extract information; extract data; extract a tooth; extract a sample; extract oil", 
+     dailyPhrase: "We need to extract useful information from the report. / The dentist had to extract my tooth. / You can extract the files from this folder." },
+  { word: "Facilitate", meaning: "လုပ်ငန်းစဉ်တစ်ခုကို ပိုမိုလွယ်ကူချောမွေ့စေသည်",
+     collocation: "facilitate communication; facilitate learning; facilitate access; facilitate discussion; facilitate development",
+      dailyPhrase: "Technology can facilitate learning. / This app facilitates communication. / The teacher helped facilitate the discussion." },
+  { word: "Factor", 
+    meaning: "ရလဒ်တစ်ခု ဖြစ်ပေါ်စေရန် အထောက်အကူပြုသည့် အကြောင်းရင်း", 
+    collocation: "key factor; major factor; contributing factor; risk factor; take something into account", 
+    dailyPhrase: "Cost is a key factor in our decision. / Several factors affect the result. / We need to take all factors into account." },
+  { word: "Feature", 
+    meaning: "ထင်ရှားသော ဝိသေသလက္ခဏာ (သို့) ရှုထောင့်",
+     collocation: "key feature; main feature; special feature; feature prominently; feature a design", 
+     dailyPhrase: "This app has a useful search feature. / Safety is a key feature of the product. / The article features several local businesses." },
+
+
+  { word: "chatty", meaning: "စကားများသော၊ စကားပြောရတာ နှစ်သက်သော", collocation: "chatty person; chatty colleague; chatty friend; chatty conversation; naturally chatty", dailyPhrase: "She's very chatty. / I'm feeling chatty today. / He can be quite chatty with his friends." },
+  { word: "friendly", meaning: "ဖော်ရွေသော၊ ခင်မင်ရင်းနှီးလွယ်သော", collocation: "friendly person; friendly smile; friendly atmosphere; friendly conversation; friendly attitude", dailyPhrase: "She's always friendly to everyone. / He gave me a friendly smile. / The staff here are very friendly." },
+  { word: "funny", meaning: "ရယ်မောဖွယ်ကောင်းသော၊ ဟာသဉာဏ်ရှိသော", collocation: "funny story; funny joke; funny person; funny situation; genuinely funny", dailyPhrase: "He's a really funny person. / That was such a funny story. / You always make me laugh." },
+  { word: "generous", meaning: "ရက်ရောသော၊ ပေးကမ်းစွန့်ကြဲတတ်သော", collocation: "generous person; generous donation; generous offer; generous with money; extremely generous", dailyPhrase: "She's very generous with her time. / That was a generous offer. / He's always willing to help others." },
+  { word: "hard-working", meaning: "အလုပ်ကြိုးစားသော", collocation: "hard-working employee; hard-working student; hard-working team; extremely hard-working; hardworking attitude", dailyPhrase: "She's a hard-working student. / He's always willing to work hard. / Hard work pays off in the end." },
+  { word: "straightforward", meaning: "ပွင့်လင်းရိုးသားသော၊ ရှင်းလင်းလွယ်ကူသော", collocation: "straightforward person; straightforward answer; straightforward approach; straightforward explanation; honest and straightforward", dailyPhrase: "I'll be straightforward with you. / She gave me a straightforward answer. / He's honest and straightforward." },
+  { word: "dynamic", meaning: "တက်ကြွလှုပ်ရှားသော၊ အပြောင်းအလဲများဖြစ်ပေါ်စေနိုင်သော", collocation: "dynamic person; dynamic team; dynamic environment; dynamic leader; dynamic personality", dailyPhrase: "She's a dynamic and energetic leader. / I enjoy working in a dynamic environment. / He's always full of energy." },
+  { word: "observant", meaning: "သတိပြုမိတတ်သော၊ အသေးစိတ်ကို သတိထားမိသော", collocation: "highly observant; keenly observant; observant person; observant eye; observant of details", dailyPhrase: "You're very observant. / She notices things other people miss. / You have a keen eye for detail." },
+  { word: "practical", meaning: "လက်တွေ့ဆန်သော၊ လက်တွေ့အသုံးဝင်သော", collocation: "practical person; practical solution; practical advice; practical experience; practical approach", dailyPhrase: "Let's find a practical solution. / She's a very practical person. / That's a practical idea." },
+  { word: "organized", meaning: "စနစ်တကျ စီစဉ်တတ်သော၊ စနစ်ကျသော", collocation: "well-organized person; organized schedule; organized workspace; highly organized; well-organized plan", dailyPhrase: "I like to keep my desk organized. / She's very organized at work. / Let's make a well-organized plan." },
+  { word: "adaptable", meaning: "အခြေအနေနှင့် လိုက်လျောညီထွေဖြစ်အောင် နေနိုင်သော", collocation: "highly adaptable; adaptable person; adaptable to change; adaptable workforce; flexible and adaptable", dailyPhrase: "She's adaptable to new situations. / You need to be adaptable at work. / He's quick to adapt to change." },
+  { word: "adventurous", meaning: "စွန့်စားခန်းများကို နှစ်သက်သော၊ စွန့်စားတတ်သော", collocation: "adventurous person; adventurous spirit; adventurous lifestyle; adventurous journey; adventurous nature", dailyPhrase: "I'm feeling adventurous today. / She's always ready for an adventure. / He has an adventurous spirit." },
+  { word: "enthusiastic", meaning: "စိတ်အားထက်သန်သော၊ တက်တက်ကြွကြွ ပါဝင်သော", collocation: "enthusiastic about learning; enthusiastic supporter; enthusiastic response; highly enthusiastic; enthusiastic participant", dailyPhrase: "I'm enthusiastic about learning English. / She was enthusiastic about the new project. / He showed great enthusiasm for his work." },
+  { word: "ambitious", meaning: "ရည်မှန်းချက်ကြီးသော၊ အောင်မြင်လိုစိတ်ပြင်းပြသော", collocation: "ambitious person; ambitious goal; ambitious plan; highly ambitious; ambitious career", dailyPhrase: "I'm ambitious about my future. / She has ambitious career goals. / He's determined to achieve his dreams." },
+  { word: "fearless", meaning: "မကြောက်မရွံ့သော၊ ရဲရင့်သော", collocation: "fearless leader; fearless attitude; fearless approach; fearless adventurer; brave and fearless", dailyPhrase: "She's fearless when facing challenges. / He has a fearless attitude. / Don't be afraid to try something new." },
+  { word: "punctual", meaning: "အချိန်မှန်သော၊ သတ်မှတ်ချိန်ကို လိုက်နာသော", collocation: "punctual person; punctual employee; punctual attendance; always punctual; punctual and reliable", dailyPhrase: "I always try to be punctual. / She's very punctual for meetings. / Please be on time tomorrow." },
+  { word: "emotional", meaning: "စိတ်ခံစားမှု ပြင်းထန်သော၊ စိတ်ထိခိုက်လွယ်သော", collocation: "emotional person; emotional response; emotional support; emotional moment; emotionally sensitive", dailyPhrase: "I'm feeling emotional today. / She became emotional during the speech. / It's okay to express your feelings." },
+  { word: "patriotic", meaning: "မျိုးချစ်စိတ်ရှိသော၊ မိမိနိုင်ငံကို ချစ်မြတ်နိုးသော", collocation: "patriotic person; patriotic spirit; patriotic duty; patriotic song; patriotic feeling", dailyPhrase: "He feels proud of his country. / The song inspired patriotic feelings. / She is deeply patriotic." },
+  { word: "responsible", meaning: "တာဝန်ယူတတ်သော၊ တာဝန်ရှိသော", collocation: "responsible person; responsible for a task; socially responsible; financially responsible; take responsibility", dailyPhrase: "I'm responsible for this task. / She's a very responsible employee. / You should take responsibility for your actions." },
+  { word: "curious", meaning: "သိချင်စိတ်ပြင်းပြသော၊ စူးစမ်းလေ့လာလိုသော", collocation: "curious person; curious about something; naturally curious; curious mind; curious to know", dailyPhrase: "I'm curious about how it works. / She's always curious to learn new things. / I'm curious to know what happened." }
+
+
+
+
 
 
 ]
@@ -2069,7 +2136,6 @@ let collocationList =[
   { collocation: "Go bad", meaning: "ပုပ်သိုးပျက်စီးသွားသည်" },
   { collocation: "Go online", meaning: "အင်တာနက်ချိတ်ဆက်သည်" },
 
-  // --- Hold Collocations ---
   { collocation: "Hold a meeting", meaning: "အစည်းအဝေးကျင်းပသည်" },
   { collocation: "Hold a conference", meaning: "ညီလာခံကျင်းပသည်" },
   { collocation: "Hold a seminar", meaning: "ဆွေးနွေးပွဲကျင်းပသည်" },
@@ -2290,7 +2356,57 @@ let collocationList =[
   { collocation: "Look up to", meaning: "လေးစားအားကျသည်" },
   { collocation: "Stand out", meaning: "ပေါ်လွင်ထင်ရှားသည်" },
   { collocation: "Cope with", meaning: "ရင်ဆိုင်ဖြေရှင်းသည်" },
-  {collocation:"Deal with",meaning:"ကိုင်တွယ် ေဖြရှင်းသည်"}
+  {collocation:"Deal with",meaning:"ကိုင်တွယ် ေဖြရှင်းသည်"},
+  { collocation: "Go into business", meaning: "စီးပွားရေးလုပ်ငန်း စတင်သည်" },
+{ collocation: "Set up a business", meaning: "စီးပွားရေးလုပ်ငန်း တည်ထောင်သည်" },
+{ collocation: "Make a loss", meaning: "အရှုံးပေါ်သည်" },
+{ collocation: "Make a profit", meaning: "အမြတ်ရသည်" },
+{ collocation: "Businesses were going under", meaning: "စီးပွားရေးလုပ်ငန်းများ ဒေဝါလီခံရခြင်း / ပြိုလဲခြင်း" },
+{ collocation: "Business would fold", meaning: "စီးပွားရေးလုပ်ငန်း ပိတ်သိမ်းရခြင်း" },
+{ collocation: "Won a contract", meaning: "စာချုပ် အနိုင်ရရှိသည်" },
+{ collocation: "Stiff competition", meaning: "ပြင်းထန်သော ပြိုင်ဆိုင်မှု" },
+{ collocation: "Took on staff", meaning: "ဝန်ထမ်းခန့်အပ်သည်" },
+{ collocation: "Created jobs", meaning: "အလုပ်အကိုင် အခွင့်အလမ်းများ ဖန်တီးပေးသည်" },
+{ collocation: "Sales figures", meaning: "အရောင်းစာရင်း / ကိန်းဂဏန်းများ" },
+{ collocation: "Annual turnover", meaning: "နှစ်ပတ်လည် ရောင်းအားပမာဏ" },
+{ collocation: "Carry out market research", meaning: "ဈေးကွက် သုတေသနပြုလုပ်သည်" },
+{ collocation: "Launching a new product", meaning: "ထုတ်ကုန်အသစ်အသစ်များကို စတင်မိတ်ဆက်သည်" },
+{ collocation: "Running a successful business", meaning: "အောင်မြင်သော စီးပွားရေးလုပ်ငန်းကို လုပ်ကိုင်သည်" },
+{ collocation: "After-sales service", meaning: "အရောင်းအပြီး ဝန်ဆောင်မှု" },
+{ collocation: "Float the company", meaning: "ကုမ္ပဏီစတော့ရှယ်ယာများကို အများပြည်သူသို့ ရောင်းချရန် စတင်သည်" },
+{ collocation: "Intention of going public", meaning: "စတော့ရှယ်ယာ စတင်ရောင်းချရန် ရည်ရွယ်ချက်" },
+{ collocation: "Firms ceased trading", meaning: "ကုမ္ပဏီ/လုပ်ငန်းများ အရောင်းအဝယ် ရပ်ဆိုင်းလိုက်သည်" },
+{ collocation: "Cut-throat competition", meaning: "အပြိုင်အဆိုင် ပြင်းထန်လွန်းသော ဈေးကွက်" },
+{ collocation: "Gone out of business", meaning: "စီးပွားရေးလုပ်ငန်း ပိတ်သိမ်းသွားသည်" },
+{ collocation: "Business is booming", meaning: "စီးပွားရေး အလွန်ကောင်းမွန် တိုးတက်နေသည်" },
+{ collocation: "Rival company", meaning: "ပြိုင်ဘက်ကုမ္ပဏီ" },
+{ collocation: "Strike a deal", meaning: "သဘောတူညီချက် ရယူသည်" },
+{ collocation: "Balance the budget", meaning: "ဘတ်ဂျက်ကို မျှတအောင် စီမံခန့်ခွဲသည်" },
+{ collocation: "Put in a bid", meaning: "တင်ဒါတင်သွင်းသည်" },
+{ collocation: "Set out some powerful arguments", meaning: "အင်အားကြီးမားသော ငြင်းခုံချက်များကို တင်ပြသည်" },
+{ collocation: "Reviewing the work of academics", meaning: "ပညာရှင်များ၏ လေ့လာမှုကို သုံးသပ်ခြင်း" },
+{ collocation: "Groundbreaking research", meaning: "လမ်းသစ်ဖောက်ထွင်သော သုတေသန" },
+{ collocation: "Significant contribution", meaning: "အရေးပါသော ပံ့ပိုးကူညီမှု" },
+{ collocation: "Provide evidence to support the claim", meaning: "တောင်းဆိုချက်ကို ထောက်ခံရန် သက်သေအထောက်အထား ပေးသည်" },
+{ collocation: "Play a central role", meaning: "အဓိကအခန်းကဏ္ဍမှ ပါဝင်သည်" },
+{ collocation: "Strenuously defends her theory", meaning: "သူမ၏ သီအိုရီကို ပြင်းပြင်းထန်ထန် ကာကွယ်သည်" },
+{ collocation: "Come under attack", meaning: "ဝေဖန်တိုက်ခိုက်ခံရသည်" },
+{ collocation: "Absolute proof", meaning: "လုံးဝတိကျသေချာသော သက်သေ" },
+{ collocation: "Key factor", meaning: "အဓိကအကြောင်းရင်း" },
+{ collocation: "Clear illustration", meaning: "ရှင်းလင်းပြတ်သားသော သက်သေပြချက်" },
+{ collocation: "Tentative explanation", meaning: "ယာယီရှင်းလင်းချက် / ေသချာမသိသေးသော ရှင်းလင်းချက်" },
+{ collocation: "Broadly support", meaning: "အဘက်ဘက်မှ အားပေးထောက်ခံသည်" },
+{ collocation: "Strong tendency", meaning: "ခိုင်မာသော လားရာ/နိမိတ်" },
+{ collocation: "Play a part", meaning: "အခန်းကဏ္ဍတစ်ခုမှ ပါဝင်သည်" },
+{ collocation: "Supporting evidence", meaning: "ထောက်ခံသည့် အထောက်အထား" },
+{ collocation: "Challenges the theory", meaning: "သီအိုရီကို စိန်ခေါ်သည်" },
+{ collocation: "Acknowledge your sources", meaning: "ကိုးကားသည့် ရရင်းမြစ်များကို အသိအမှတ်ပြုသည်" },
+{ collocation: "Commit plagiarism", meaning: "စာမူခိုးယူမှု ကျူးလွန်သည်" },
+{ collocation: "Do research", meaning: "သုတေသန လုပ်သည်" },
+{ collocation: "Carry out research", meaning: "သုတေသန ဆောင်ရွက်သည်" },
+{ collocation: "Puts forward a theory", meaning: "သီအိုရီတစ်ခုကို တင်ပြသည်" },
+{ collocation: "Proposes a theory", meaning: "သီအိုရီတစ်ခုကို အဆိုပြုသည်" },
+{ collocation: "Goes into great detail", meaning: "အသေးစိတ်ကျကျ အစအဆုံး အကျယ်တဝင့် ရှင်းပြသည်" }
   
 ]
 
@@ -2381,6 +2497,7 @@ if (clearBtn) {
   });
 
 }
+
 let vocabPage = 1;
 let collPage = 1;
 const perPage = 10;
@@ -2465,13 +2582,17 @@ function startQuizMode() {
 function displayCurrentQuiz() {
   const currentItem = quizList[currentQuizIndex];
   document.getElementById("quizWord").innerText = `Word: ${currentItem.word || currentItem.collocation}`;
-  document.getElementById("quizMeaning").innerText = ""; // အဖြေကို အရင်ဝှက်ထားမည်
-}
+  document.getElementById("quizMeaning").innerText = ""; }
 
 function showAnswer() {
   const currentItem = quizList[currentQuizIndex];
   document.getElementById("quizMeaning").innerText = `Meaning: ${currentItem.meaning}`;
+
+
+
+
 }
+
 
 function nextQuizQuestion() {
   currentQuizIndex++;
