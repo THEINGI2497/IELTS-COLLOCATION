@@ -120,7 +120,7 @@ dailyPhrase: "She is a passionate advocate for environmental conservation."
   dailyPhrase: "You need permission to access this file."
 
 },
-{word: "Avaiable,Ready,Free",meaning:"အားလပ်သည်",
+{word: "Avaliable,Ready,Free",meaning:"အားလပ်သည်",
   collocation: "The product is available for purchase",
   dailyPhrase: "The store is ready to serve customers."
 },
@@ -164,7 +164,7 @@ dailyPhrase: "She is a passionate advocate for environmental conservation."
   collocation: "Conduct a meeting",
   dailyPhrase: "The teacher will conduct the experiment."
 },
-{word: "Consequence,Result,Advice",meaning:"အကျိူးပြုသည်",
+{word: "Consequence,Result,outcome",meaning:"ရလဒ်",
   collocation: "The consequence of his actions was severe",
   dailyPhrase: "Consider the consequences before making a decision."
 },
@@ -212,7 +212,7 @@ dailyPhrase: "She is a passionate advocate for environmental conservation."
   collocation: "Identify the key stakeholders in the project",
   dailyPhrase: "Make sure to identify any potential risks before proceeding."
 },
-{word: "Investigate,Reseach,Inspect",meaning:"စုံစမ်းစစ် ေဆးသည်",
+{word: "Investigate,Research,Inspect",meaning:"စုံစမ်းစစ် ေဆးသည်",
   collocation: "Investigate the cause of the problem",
   dailyPhrase: "Regularly investigate your processes to find areas for improvement."
 },
@@ -220,7 +220,7 @@ dailyPhrase: "She is a passionate advocate for environmental conservation."
   collocation: "Maintain the equipment regularly",
   dailyPhrase: "Make sure to maintain a healthy work-life balance."
 },
-{word: "Top priporty",meaning:"အ ေရးကြီးဆုံးဦးစားေပး",
+{word: "Top priority",meaning:"အ ေရးကြီးဆုံးဦးစားေပး",
   collocation: "Prioritize your tasks based on their importance",
   dailyPhrase: "Focus on the most important tasks first."
 },
